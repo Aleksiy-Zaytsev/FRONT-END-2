@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+}
+
+h1 {
+  margin: 20px;
+}
+
+p {
+  margin: 20px;
+}
+
+a {
+  padding: 15px;
+  background-color: #bbb;
+  border-radius: 5px;
+  border-color: black;
+  color: black;
+  border: solid, 5px;
+}
+a:hover {
+  background-color: #898989;
+}
