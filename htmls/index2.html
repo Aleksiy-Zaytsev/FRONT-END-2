@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <section class="right mright">
+      <a href="/htmls/index.html" class=""
+        ><button class="padd">Sign up</button></a
+      >
+      <a href="/htmls/index1.html" class=""
+        ><button class="padd">Log in</button></a
+      >
+    </section>
+    <h1 class="mleft">Search page</h1>
+    <form action="https://fom.in.ua/echo" method="get">
+      <fieldset class="w50">
+        <legend><h2>Choose options you want to apply to your car</h2></legend>
+        <div>
+          <p>Engine volume:</p>
+          <input
+            class="w02"
+            type="number"
+            min="0.5"
+            name="Engine volume (litters)"
+            step="0.5"
+          />
+        </div>
+        <div>
+          <p>Piston count:</p>
+          <input
+            type="number"
+            class="w02"
+            min="1"
+            max="12"
+            step="1"
+            name="Number of pistons"
+          />
+        </div>
+        <div>
+          <p>Country producer:</p>
+          <input type="text" name="Made in:" />
+        </div>
+        <div>
+          <p>State:</p>
+          <label
+            ><input
+              type="checkbox"
+              name="State:"
+              class=""
+              value="used"
+            />Used</label
+          ><br /><label
+            ><input
+              type="checkbox"
+              name="State:"
+              class=""
+              value="crashed"
+            />Crashed</label
+          ><br /><label
+            ><input
+              type="checkbox"
+              name="State:"
+              class=""
+              value="stolen"
+            />Stolen</label
+          ><br /><label
+            ><input
+              type="checkbox"
+              name="State:"
+              class=""
+              value="tinted"
+            />Tinted</label
+          >
+        </div>
+        <br />
+        <select name="Fuel">
+          <optgroup label="Fuel type">
+            <option value="none" selected disabled>Choose fuel type</option>
+            <option value="benzene 92">Benzene 92</option>
+            <option value="benzene 95">Benzene 95</option>
+            <option value="diesel">Diesel</option>
+          </optgroup>
+        </select>
+        <div>
+          <p>Choose car's color:</p>
+          <label
+            ><input
+              class=""
+              type="radio"
+              name="Color"
+              value="Black"
+            />Black</label
+          ><br />
+          <label
+            ><input class="" type="radio" name="Color" value="Red" />Red</label
+          ><br />
+          <label
+            ><input
+              class=""
+              type="radio"
+              name="Color"
+              value="Blue"
+            />Blue</label
+          ><br />
+          <label
+            ><input
+              class=""
+              type="radio"
+              name="Color"
+              value="White"
+            />White</label
+          ><br />
+        </div>
+      </fieldset>
+      <div class="cent margin">
+        <button class="padd" type="submit">Enter</button>
+        <button class="padd" type="reset">Reset</button>
+      </div>
+    </form>
+  </body>
+</html>
