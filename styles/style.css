@@ -1,0 +1,32 @@
+@import url(./fonts/fonts.css);
+
+:root {
+  --background-color: #f3f5f6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: "Inter";
+}
+
+.info {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.name {
+  font-size: 20px;
+}
+
+img {
+  display: block;
+  aspect-ratio: 5 / 4;
+  max-width: 100%;
+  border: solid black 1px;
+}
