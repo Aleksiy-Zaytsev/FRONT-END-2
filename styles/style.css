@@ -18,15 +18,178 @@ body {
 .info {
   font-weight: 700;
   font-size: 32px;
+  margin-bottom: 32px;
 }
 
 .name {
   font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.position {
+  font-size: 14px;
 }
 
 img {
   display: block;
-  aspect-ratio: 5 / 4;
   max-width: 100%;
-  border: solid black 1px;
+}
+
+.ratio {
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.wrapper {
+  display: flex;
+  gap: 30px;
+  padding: 64px 0;
+  align-items: flex-start;
+}
+
+.slider {
+  display: flex;
+  position: relative;
+  width: 50%;
+  gap: 30px;
+}
+
+.text {
+  padding-top: 60px;
+  width: 25%;
+  left: 80px;
+  z-index: 1;
+  position: relative;
+}
+
+.image {
+  width: 35%;
+  position: relative;
+}
+
+.play {
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+}
+
+.slide {
+  flex-basis: 50%;
+}
+
+.arrows {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 24px;
+}
+
+.slider .arrow {
+  background-color: var(--background-color);
+  padding: 40px;
+}
+
+.arrow img {
+  max-width: fit-content;
+}
+
+@media (width <= 758px) {
+  .hidden {
+    display: none;
+  }
+
+  .wrapper {
+    gap: 20px;
+  }
+
+  .slide {
+    flex-basis: initial;
+  }
+
+  .arrows {
+    gap: 16px;
+  }
+
+  .slider .arrow {
+    padding: 1rem;
+  }
+
+  .image {
+    width: 65%;
+  }
+
+  .info {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  .name {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+
+  .position {
+    font-size: 12px;
+  }
+
+  .text {
+    padding-top: 48px;
+    width: initial;
+  }
+}
+
+@media (width <= 375px) {
+  .hidden {
+    display: initial;
+  }
+
+  .slide {
+    flex-basis: 50%;
+  }
+
+  .slider .arrow {
+    padding: 0;
+  }
+
+  .wrapper {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 16px;
+    gap: 10px;
+  }
+
+  .info {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  .name {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  .position {
+    font-size: 12px;
+  }
+
+  .text {
+    position: absolute;
+    color: white;
+    width: initial;
+    top: 56px;
+    left: 23px;
+    right: 130px;
+    padding-top: 0;
+  }
+
+  .slider {
+    width: 100%;
+  }
+
+  .image {
+    width: 100%;
+  }
 }
