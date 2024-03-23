@@ -3,13 +3,142 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/fonts/fonts.css" />
+    <title>Main Page</title>
+    <link rel="stylesheet" href="./assets/bootstrap.min.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <div class="d-flex navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contacts.html">Contacts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="container text-center py-5">
+          <h1>Information</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam
+            veritatis repellendus repudiandae! Voluptas quis unde similique
+            saepe ex mollitia! Eum molestias facere itaque quod saepe
+            consectetur laborum debitis quasi excepturi!
+          </p>
+          <button class="btn btn-primary">Call to action</button>
+        </div>
+      </section>
+      <section class="bg-body-tertiary">
+        <div class="container py-5">
+          <h2>Columns with icons</h2>
+          <hr />
+          <div class="row">
+            <div class="col">
+              <h2>Featured Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corrupti accusantium sequi facilis quidem nulla nam, officia
+                repellat ipsa sit illum quia excepturi, unde natus modi delectus
+                voluptatem ex ipsam consequuntur.
+              </p>
+              <a href="#">Call to action</a>
+            </div>
+            <div class="col">
+              <h2>Featured Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                alias aperiam aliquid quod blanditiis nulla nobis, obcaecati,
+                voluptatum commodi, neque sequi a ex adipisci repellat mollitia
+                nam minus assumenda dicta.
+              </p>
+              <a href="#">Call to action</a>
+            </div>
+            <div class="col">
+              <h2>Featured Title</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci repellat magnam, pariatur quis ratione sequi dolorum
+                impedit est, eius similique placeat! Minima, tempore. Maxime
+                aliquid assumenda sapiente eius ea alias!
+              </p>
+              <a href="#">Call to action</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+              <img
+                src="./images/bootstrap_image.jpg"
+                class="d-block mx-lg-auto img-fluid"
+                alt="bootstrap"
+              />
+            </div>
+            <div class="col-lg-6">
+              <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                Responsive left-aligned hero with image
+              </h1>
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim
+                iusto laborum voluptatibus, rem distinctio minus quidem dolor
+                iure, impedit dolores ea unde quo iste mollitia ducimus
+                necessitatibus hic quam culpa rerum nulla quia vel quibusdam ab
+                soluta! Saepe est magnam molestias aliquid nihil, aliquam
+                possimus earum quod fugiat voluptatibus distinctio.
+              </p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <button
+                  type="button"
+                  class="btn btn-primary btn-lg px-4 me-md-2"
+                >
+                  Primary
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary btn-lg px-4"
+                >
+                  Default
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-body-tertiary">
+      <div class="container py-5">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>
+          Album example is © Bootstrap, but please download and customize it for
+          yourself!
+        </p>
+        <p>
+          New to Bootstrap? <a href="#">Visit the homepage </a>or read our
+          <a href="#">getting started guide</a>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
